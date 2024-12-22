@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2980b9;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    height: 74px;
+    border-radius: 4px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links li img {
+    width: 20px;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6347; 
+}
+
+.basket-count{
+    background-color: #FF0000;
+    color: #fff !important;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 12px;
+    height: 16px;
+    line-height: 18px;
+    text-align: center;
+    width: 16px;
+    margin-right: 2px;
+}

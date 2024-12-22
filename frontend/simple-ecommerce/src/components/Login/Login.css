@@ -1,0 +1,28 @@
+
+.login-container {
+    width: 600px;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.login-button {
+    display: block;
+    width: fit-content;
+    background-color: #28a745;
+    margin: 0 auto;
+}
+
+#navigate-register {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#navigate-register:hover{
+    text-decoration: none;
+}    

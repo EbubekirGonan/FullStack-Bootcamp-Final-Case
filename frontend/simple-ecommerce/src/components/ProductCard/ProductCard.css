@@ -1,0 +1,87 @@
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    padding: 0 20px 15px 20px; 
+    height: 400px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 10px;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.add-to-basket-button {
+    background-color: #2980b9;
+}
+
+.add-to-basket-button:hover {
+    background-color: #3498db;
+}
+
+.clickable-div {
+    cursor: pointer;
+}
+
+.basket-controls {
+    margin: 0 8px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.increase-button {
+    background-color: #4CAF50; 
+}
+
+.decrease-button {
+    background-color: #db1b54;
+}
+
+.basket-controls span {
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+

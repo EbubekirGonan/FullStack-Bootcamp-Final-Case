@@ -1,0 +1,26 @@
+services:
+  main-service-app:
+    build:
+      context: .
+    ports: 
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - redis
+    networks:
+      - app-network
+      - kafka-network
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+  kafka-network:
+    external: true

@@ -1,0 +1,36 @@
+{
+  "name": "odev3-ebubekirgonan",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7HUwLc_k)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patika-newmind-fullstack/odev3-EbubekirGonan.git"
+  },
+  "author": "Ebubekir Gönan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patika-newmind-fullstack/odev3-EbubekirGonan/issues"
+  },
+  "homepage": "https://github.com/Patika-newmind-fullstack/odev3-EbubekirGonan#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.17.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^8.8.2",
+    "nodemon": "^3.1.7",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.7"
+  }
+}
