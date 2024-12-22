@@ -1,0 +1,19 @@
+services:
+  payment-microservice-app:
+    build:
+      context: .
+    ports: 
+      - "4000:4000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      KAFKA_BROKER: kafka:9092 
+    networks:
+      - app-network
+      - kafka-network
+
+networks:
+  app-network:
+  kafka-network:
+    external: true

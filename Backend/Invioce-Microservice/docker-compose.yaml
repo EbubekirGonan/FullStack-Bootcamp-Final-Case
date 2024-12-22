@@ -1,0 +1,19 @@
+services:
+  invoice-microservice-app:
+    build:
+      context: .
+    ports: 
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      KAFKA_BROKER: kafka:9092 
+    networks:
+      - app-network
+      - kafka-network
+
+networks:
+  app-network:
+  kafka-network:
+    external: true
