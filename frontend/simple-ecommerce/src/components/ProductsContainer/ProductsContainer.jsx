@@ -1,7 +1,7 @@
 import ProductCard from "../ProductCard/ProductCard"
 import './ProductsContainer.css'
 
-function ProductsContainer({filteredProducts, handleAddToBasket, handleRemoveFromBasket, basket, setBasket}) {
+function ProductsContainer({filteredProducts, handleAddToBasket, handleRemoveFromBasket}) {
   return (
     <>
     <div id="products-container">

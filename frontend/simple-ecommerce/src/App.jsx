@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import axios from 'axios'
 
 import './App.css'
 import Header from './components/Header/Header'
@@ -19,9 +18,6 @@ import api from './api/api';
 function App() {
   const [products, setProducts] = useState([])
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [editingProductId, setEditingProductId] = useState(null);
-  const [deleteProductId, setDeleteProductId] = useState(null); 
-  const [isLoading, setIsLoading] = useState(true);
   const [basket, setBasket] = useState([])
   const { isAuthenticated } = useAuth(); 
 
@@ -33,7 +29,6 @@ function App() {
     // console.log(res.data.response)
       setProducts(res.data.response)
       setFilteredProducts(res.data.response)
-      setIsLoading(false)
     })
     .catch(err => alert('Transaction failed!: ', err))
   }
