@@ -79,3 +79,5 @@ JWT kontrolü:
 Ödeme sonrası payment ve invoice mikroservislerinin log'ları(ürün id'si ve adedi mesaj olarak gönderilmiştir.)
 ![](./ScreenShots/MicroService-Logs.png)
 
+Elastic Search:
+![](./ScreenShots/Elastic-Search.png)
